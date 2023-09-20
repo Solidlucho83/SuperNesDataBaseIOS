@@ -17,10 +17,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WpE-jH-rYb">
-                                <rect key="frame" x="16" y="751.66666666666663" width="361" height="34.333333333333371"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WpE-jH-rYb">
+                                <rect key="frame" x="16" y="750" width="361" height="36"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="To List Games"/>
+                                <buttonConfiguration key="configuration" style="plain" image="gamecontroller" catalog="system" title="To List Games" imagePadding="1">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="default"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <segue destination="NVC-Mg-5kw" kind="show" id="JeH-hu-LoW"/>
                                 </connections>
@@ -107,6 +109,7 @@
     </scenes>
     <resources>
         <image name="Snes" width="251" height="220.5"/>
+        <image name="gamecontroller" catalog="system" width="128" height="79"/>
         <image name="logoSnes" width="400" height="77.5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
