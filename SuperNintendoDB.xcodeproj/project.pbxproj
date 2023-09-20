@@ -19,8 +19,6 @@
 		0EDD1FDA2AB50F2A00609A3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EDD1FD82AB50F2A00609A3F /* Main.storyboard */; };
 		0EDD1FDC2AB50F2B00609A3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EDD1FDB2AB50F2B00609A3F /* Assets.xcassets */; };
 		0EDD1FDF2AB50F2B00609A3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EDD1FDD2AB50F2B00609A3F /* LaunchScreen.storyboard */; };
-		0EDD1FE82AB51A7300609A3F /* GameStruct   .swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDD1FE72AB51A7300609A3F /* GameStruct   .swift */; };
-		0EDD1FEA2AB51AF300609A3F /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDD1FE92AB51AF300609A3F /* Repository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,8 +34,6 @@
 		0EDD1FDB2AB50F2B00609A3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0EDD1FDE2AB50F2B00609A3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0EDD1FE02AB50F2B00609A3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0EDD1FE72AB51A7300609A3F /* GameStruct   .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameStruct   .swift"; sourceTree = "<group>"; };
-		0EDD1FE92AB51AF300609A3F /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				0E9BB3082AB77E1700A5FAD6 /* Cells */,
-				0EDD1FE62AB51A4A00609A3F /* Model */,
 				0EDD1FD22AB50F2A00609A3F /* AppDelegate.swift */,
 				0EDD1FD42AB50F2A00609A3F /* SceneDelegate.swift */,
 				0EDD1FD82AB50F2A00609A3F /* Main.storyboard */,
@@ -94,15 +89,6 @@
 				0E9BB3062AB7763500A5FAD6 /* ListGamesViewController.swift */,
 			);
 			path = SuperNintendoDB;
-			sourceTree = "<group>";
-		};
-		0EDD1FE62AB51A4A00609A3F /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				0EDD1FE72AB51A7300609A3F /* GameStruct   .swift */,
-				0EDD1FE92AB51AF300609A3F /* Repository.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,8 +171,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0EDD1FE82AB51A7300609A3F /* GameStruct   .swift in Sources */,
-				0EDD1FEA2AB51AF300609A3F /* Repository.swift in Sources */,
 				0EDD1FD32AB50F2A00609A3F /* AppDelegate.swift in Sources */,
 				0EDD1FD52AB50F2A00609A3F /* SceneDelegate.swift in Sources */,
 				0E9BB3072AB7763500A5FAD6 /* ListGamesViewController.swift in Sources */,

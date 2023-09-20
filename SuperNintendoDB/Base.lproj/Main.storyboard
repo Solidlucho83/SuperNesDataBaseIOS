@@ -26,17 +26,23 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Snes" translatesAutoresizingMaskIntoConstraints="NO" id="vF5-IM-ciA">
-                                <rect key="frame" x="16" y="203" width="361" height="220.66666666666663"/>
+                                <rect key="frame" x="16" y="225.66666666666669" width="361" height="220.66666666666669"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoSnes" translatesAutoresizingMaskIntoConstraints="NO" id="s9a-ho-aVG">
+                                <rect key="frame" x="16" y="100" width="361" height="77.666666666666686"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="s9a-ho-aVG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="45x-ex-KpR"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WpE-jH-rYb" secondAttribute="bottom" constant="32" id="58K-eZ-3nU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="s9a-ho-aVG" secondAttribute="trailing" constant="16" id="6rm-r2-26t"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WpE-jH-rYb" secondAttribute="trailing" constant="16" id="HZx-0j-AIO"/>
                             <constraint firstItem="vF5-IM-ciA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Wg6-bd-1sf"/>
+                            <constraint firstItem="vF5-IM-ciA" firstAttribute="top" secondItem="s9a-ho-aVG" secondAttribute="bottom" constant="48" id="kAh-9J-bny"/>
+                            <constraint firstItem="s9a-ho-aVG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="100" id="lCY-yc-Suz"/>
                             <constraint firstItem="WpE-jH-rYb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ndc-Ut-k5g"/>
-                            <constraint firstItem="vF5-IM-ciA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="uLV-er-1Hb"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vF5-IM-ciA" secondAttribute="trailing" constant="16" id="xr6-rJ-thm"/>
                         </constraints>
                     </view>
@@ -101,6 +107,7 @@
     </scenes>
     <resources>
         <image name="Snes" width="251" height="220.5"/>
+        <image name="logoSnes" width="400" height="77.5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
