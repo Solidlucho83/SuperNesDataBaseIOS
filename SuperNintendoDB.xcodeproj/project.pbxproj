@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E74B56E2AB852280042487A /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 0E74B56D2AB852280042487A /* FirebaseFirestore */; };
+		0E74B5702AB852280042487A /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0E74B56F2AB852280042487A /* FirebaseFirestoreSwift */; };
+		0E9BB3052AB774A200A5FAD6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9BB3042AB774A200A5FAD6 /* HomeViewController.swift */; };
+		0E9BB3072AB7763500A5FAD6 /* ListGamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9BB3062AB7763500A5FAD6 /* ListGamesViewController.swift */; };
+		0E9BB3112AB7888500A5FAD6 /* GameDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9BB30F2AB7888500A5FAD6 /* GameDetailTableViewCell.swift */; };
+		0E9BB3122AB7888500A5FAD6 /* GameDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E9BB3102AB7888500A5FAD6 /* GameDetailTableViewCell.xib */; };
+		0E9BB3162AB7B86A00A5FAD6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0E9BB3152AB7B86A00A5FAD6 /* GoogleService-Info.plist */; };
+		0EDD1FD32AB50F2A00609A3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDD1FD22AB50F2A00609A3F /* AppDelegate.swift */; };
+		0EDD1FD52AB50F2A00609A3F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDD1FD42AB50F2A00609A3F /* SceneDelegate.swift */; };
+		0EDD1FDA2AB50F2A00609A3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EDD1FD82AB50F2A00609A3F /* Main.storyboard */; };
+		0EDD1FDC2AB50F2B00609A3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EDD1FDB2AB50F2B00609A3F /* Assets.xcassets */; };
+		0EDD1FDF2AB50F2B00609A3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EDD1FDD2AB50F2B00609A3F /* LaunchScreen.storyboard */; };
+		0EDD1FE82AB51A7300609A3F /* GameStruct   .swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDD1FE72AB51A7300609A3F /* GameStruct   .swift */; };
+		0EDD1FEA2AB51AF300609A3F /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDD1FE92AB51AF300609A3F /* Repository.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0E9BB3042AB774A200A5FAD6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		0E9BB3062AB7763500A5FAD6 /* ListGamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListGamesViewController.swift; sourceTree = "<group>"; };
+		0E9BB30F2AB7888500A5FAD6 /* GameDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailTableViewCell.swift; sourceTree = "<group>"; };
+		0E9BB3102AB7888500A5FAD6 /* GameDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameDetailTableViewCell.xib; sourceTree = "<group>"; };
+		0E9BB3152AB7B86A00A5FAD6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0EDD1FCF2AB50F2A00609A3F /* SuperNintendoDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperNintendoDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EDD1FD22AB50F2A00609A3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0EDD1FD42AB50F2A00609A3F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0EDD1FD92AB50F2A00609A3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0EDD1FDB2AB50F2B00609A3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0EDD1FDE2AB50F2B00609A3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0EDD1FE02AB50F2B00609A3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0EDD1FE72AB51A7300609A3F /* GameStruct   .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameStruct   .swift"; sourceTree = "<group>"; };
+		0EDD1FE92AB51AF300609A3F /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0EDD1FCC2AB50F2A00609A3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E74B56E2AB852280042487A /* FirebaseFirestore in Frameworks */,
+				0E74B5702AB852280042487A /* FirebaseFirestoreSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E9BB3082AB77E1700A5FAD6 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0E9BB30F2AB7888500A5FAD6 /* GameDetailTableViewCell.swift */,
+				0E9BB3102AB7888500A5FAD6 /* GameDetailTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		0EDD1FC62AB50F2A00609A3F = {
+			isa = PBXGroup;
+			children = (
+				0E9BB3152AB7B86A00A5FAD6 /* GoogleService-Info.plist */,
+				0EDD1FD12AB50F2A00609A3F /* SuperNintendoDB */,
+				0EDD1FD02AB50F2A00609A3F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0EDD1FD02AB50F2A00609A3F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0EDD1FCF2AB50F2A00609A3F /* SuperNintendoDB.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0EDD1FD12AB50F2A00609A3F /* SuperNintendoDB */ = {
+			isa = PBXGroup;
+			children = (
+				0E9BB3082AB77E1700A5FAD6 /* Cells */,
+				0EDD1FE62AB51A4A00609A3F /* Model */,
+				0EDD1FD22AB50F2A00609A3F /* AppDelegate.swift */,
+				0EDD1FD42AB50F2A00609A3F /* SceneDelegate.swift */,
+				0EDD1FD82AB50F2A00609A3F /* Main.storyboard */,
+				0EDD1FDB2AB50F2B00609A3F /* Assets.xcassets */,
+				0EDD1FDD2AB50F2B00609A3F /* LaunchScreen.storyboard */,
+				0EDD1FE02AB50F2B00609A3F /* Info.plist */,
+				0E9BB3042AB774A200A5FAD6 /* HomeViewController.swift */,
+				0E9BB3062AB7763500A5FAD6 /* ListGamesViewController.swift */,
+			);
+			path = SuperNintendoDB;
+			sourceTree = "<group>";
+		};
+		0EDD1FE62AB51A4A00609A3F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0EDD1FE72AB51A7300609A3F /* GameStruct   .swift */,
+				0EDD1FE92AB51AF300609A3F /* Repository.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0EDD1FCE2AB50F2A00609A3F /* SuperNintendoDB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0EDD1FE32AB50F2B00609A3F /* Build configuration list for PBXNativeTarget "SuperNintendoDB" */;
+			buildPhases = (
+				0EDD1FCB2AB50F2A00609A3F /* Sources */,
+				0EDD1FCC2AB50F2A00609A3F /* Frameworks */,
+				0EDD1FCD2AB50F2A00609A3F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SuperNintendoDB;
+			packageProductDependencies = (
+				0E74B56D2AB852280042487A /* FirebaseFirestore */,
+				0E74B56F2AB852280042487A /* FirebaseFirestoreSwift */,
+			);
+			productName = SuperNintendoDB;
+			productReference = 0EDD1FCF2AB50F2A00609A3F /* SuperNintendoDB.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0EDD1FC72AB50F2A00609A3F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					0EDD1FCE2AB50F2A00609A3F = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 0EDD1FCA2AB50F2A00609A3F /* Build configuration list for PBXProject "SuperNintendoDB" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0EDD1FC62AB50F2A00609A3F;
+			packageReferences = (
+				0E74B56C2AB852280042487A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 0EDD1FD02AB50F2A00609A3F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0EDD1FCE2AB50F2A00609A3F /* SuperNintendoDB */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0EDD1FCD2AB50F2A00609A3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E9BB3122AB7888500A5FAD6 /* GameDetailTableViewCell.xib in Resources */,
+				0EDD1FDF2AB50F2B00609A3F /* LaunchScreen.storyboard in Resources */,
+				0E9BB3162AB7B86A00A5FAD6 /* GoogleService-Info.plist in Resources */,
+				0EDD1FDC2AB50F2B00609A3F /* Assets.xcassets in Resources */,
+				0EDD1FDA2AB50F2A00609A3F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0EDD1FCB2AB50F2A00609A3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EDD1FE82AB51A7300609A3F /* GameStruct   .swift in Sources */,
+				0EDD1FEA2AB51AF300609A3F /* Repository.swift in Sources */,
+				0EDD1FD32AB50F2A00609A3F /* AppDelegate.swift in Sources */,
+				0EDD1FD52AB50F2A00609A3F /* SceneDelegate.swift in Sources */,
+				0E9BB3072AB7763500A5FAD6 /* ListGamesViewController.swift in Sources */,
+				0E9BB3112AB7888500A5FAD6 /* GameDetailTableViewCell.swift in Sources */,
+				0E9BB3052AB774A200A5FAD6 /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0EDD1FD82AB50F2A00609A3F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0EDD1FD92AB50F2A00609A3F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0EDD1FDD2AB50F2B00609A3F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0EDD1FDE2AB50F2B00609A3F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0EDD1FE12AB50F2B00609A3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0EDD1FE22AB50F2B00609A3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0EDD1FE42AB50F2B00609A3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SuperNintendoDB/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = solidlucho.gamelistDataBase;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		0EDD1FE52AB50F2B00609A3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SuperNintendoDB/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = solidlucho.gamelistDataBase;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0EDD1FCA2AB50F2A00609A3F /* Build configuration list for PBXProject "SuperNintendoDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EDD1FE12AB50F2B00609A3F /* Debug */,
+				0EDD1FE22AB50F2B00609A3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0EDD1FE32AB50F2B00609A3F /* Build configuration list for PBXNativeTarget "SuperNintendoDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EDD1FE42AB50F2B00609A3F /* Debug */,
+				0EDD1FE52AB50F2B00609A3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0E74B56C2AB852280042487A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0E74B56D2AB852280042487A /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0E74B56C2AB852280042487A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		0E74B56F2AB852280042487A /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0E74B56C2AB852280042487A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 0EDD1FC72AB50F2A00609A3F /* Project object */;
+}

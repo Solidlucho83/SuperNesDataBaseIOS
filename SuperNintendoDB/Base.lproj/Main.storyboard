@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="myr-lz-OLM">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="SuperNintendoDB" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WpE-jH-rYb">
+                                <rect key="frame" x="16" y="751.66666666666663" width="361" height="34.333333333333371"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="To List Games"/>
+                                <connections>
+                                    <segue destination="NVC-Mg-5kw" kind="show" id="JeH-hu-LoW"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Snes" translatesAutoresizingMaskIntoConstraints="NO" id="vF5-IM-ciA">
+                                <rect key="frame" x="16" y="203" width="361" height="220.66666666666663"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WpE-jH-rYb" secondAttribute="bottom" constant="32" id="58K-eZ-3nU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WpE-jH-rYb" secondAttribute="trailing" constant="16" id="HZx-0j-AIO"/>
+                            <constraint firstItem="vF5-IM-ciA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Wg6-bd-1sf"/>
+                            <constraint firstItem="WpE-jH-rYb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ndc-Ut-k5g"/>
+                            <constraint firstItem="vF5-IM-ciA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="uLV-er-1Hb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vF5-IM-ciA" secondAttribute="trailing" constant="16" id="xr6-rJ-thm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="yTk-4X-X4h"/>
+                    <connections>
+                        <outlet property="toGameListButton" destination="WpE-jH-rYb" id="SB8-14-84N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1539.6946564885495" y="3.5211267605633805"/>
+        </scene>
+        <!--List Games View Controller-->
+        <scene sceneID="FKj-nV-Yos">
+            <objects>
+                <viewController id="NVC-Mg-5kw" customClass="ListGamesViewController" customModule="SuperNintendoDB" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vjt-yg-h9V" customClass="ListGamesView">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="BUH-fL-kk6">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="R78-Zp-qbY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BUH-fL-kk6" firstAttribute="top" secondItem="R78-Zp-qbY" secondAttribute="top" id="3d5-cx-Jf3"/>
+                            <constraint firstItem="R78-Zp-qbY" firstAttribute="bottom" secondItem="BUH-fL-kk6" secondAttribute="bottom" id="hht-ei-tgr"/>
+                            <constraint firstItem="BUH-fL-kk6" firstAttribute="leading" secondItem="R78-Zp-qbY" secondAttribute="leading" id="hva-ON-kiP"/>
+                            <constraint firstItem="R78-Zp-qbY" firstAttribute="trailing" secondItem="BUH-fL-kk6" secondAttribute="trailing" id="zrQ-dK-ty6"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="vHW-W0-xo8"/>
+                    <connections>
+                        <outlet property="listGameTableView" destination="BUH-fL-kk6" id="vFi-5S-WsL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MWG-it-pxs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2534" y="-123"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="X8Z-pb-B0P">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="myr-lz-OLM" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Os7-jj-Zn1">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="6L0-Ju-fjb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tuX-T5-FZy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="54.198473282442748" y="-34.507042253521128"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Snes" width="251" height="220.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
