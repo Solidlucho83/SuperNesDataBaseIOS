@@ -14,6 +14,9 @@
 		0E9BB3112AB7888500A5FAD6 /* GameDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9BB30F2AB7888500A5FAD6 /* GameDetailTableViewCell.swift */; };
 		0E9BB3122AB7888500A5FAD6 /* GameDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E9BB3102AB7888500A5FAD6 /* GameDetailTableViewCell.xib */; };
 		0E9BB3162AB7B86A00A5FAD6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0E9BB3152AB7B86A00A5FAD6 /* GoogleService-Info.plist */; };
+		0EBA3C282ABC334200AB7B07 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBA3C272ABC334200AB7B07 /* Observable.swift */; };
+		0EBA3C2A2ABC372E00AB7B07 /* ListGamesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBA3C292ABC372E00AB7B07 /* ListGamesViewModel.swift */; };
+		0EBA3C2E2ABC3AA200AB7B07 /* GameDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBA3C2D2ABC3AA200AB7B07 /* GameDetailViewController.swift */; };
 		0EDD1FD32AB50F2A00609A3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDD1FD22AB50F2A00609A3F /* AppDelegate.swift */; };
 		0EDD1FD52AB50F2A00609A3F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDD1FD42AB50F2A00609A3F /* SceneDelegate.swift */; };
 		0EDD1FDA2AB50F2A00609A3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EDD1FD82AB50F2A00609A3F /* Main.storyboard */; };
@@ -27,6 +30,9 @@
 		0E9BB30F2AB7888500A5FAD6 /* GameDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailTableViewCell.swift; sourceTree = "<group>"; };
 		0E9BB3102AB7888500A5FAD6 /* GameDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameDetailTableViewCell.xib; sourceTree = "<group>"; };
 		0E9BB3152AB7B86A00A5FAD6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0EBA3C272ABC334200AB7B07 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		0EBA3C292ABC372E00AB7B07 /* ListGamesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListGamesViewModel.swift; sourceTree = "<group>"; };
+		0EBA3C2D2ABC3AA200AB7B07 /* GameDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailViewController.swift; sourceTree = "<group>"; };
 		0EDD1FCF2AB50F2A00609A3F /* SuperNintendoDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperNintendoDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EDD1FD22AB50F2A00609A3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EDD1FD42AB50F2A00609A3F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +64,25 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		0EC6D7632ABE1C34004D1F0A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0EBA3C272ABC334200AB7B07 /* Observable.swift */,
+				0EBA3C292ABC372E00AB7B07 /* ListGamesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0EC6D7642ABE1C4F004D1F0A /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				0E9BB3042AB774A200A5FAD6 /* HomeViewController.swift */,
+				0E9BB3062AB7763500A5FAD6 /* ListGamesViewController.swift */,
+				0EBA3C2D2ABC3AA200AB7B07 /* GameDetailViewController.swift */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
 		0EDD1FC62AB50F2A00609A3F = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +103,8 @@
 		0EDD1FD12AB50F2A00609A3F /* SuperNintendoDB */ = {
 			isa = PBXGroup;
 			children = (
+				0EC6D7642ABE1C4F004D1F0A /* Features */,
+				0EC6D7632ABE1C34004D1F0A /* ViewModel */,
 				0E9BB3082AB77E1700A5FAD6 /* Cells */,
 				0EDD1FD22AB50F2A00609A3F /* AppDelegate.swift */,
 				0EDD1FD42AB50F2A00609A3F /* SceneDelegate.swift */,
@@ -85,8 +112,6 @@
 				0EDD1FDB2AB50F2B00609A3F /* Assets.xcassets */,
 				0EDD1FDD2AB50F2B00609A3F /* LaunchScreen.storyboard */,
 				0EDD1FE02AB50F2B00609A3F /* Info.plist */,
-				0E9BB3042AB774A200A5FAD6 /* HomeViewController.swift */,
-				0E9BB3062AB7763500A5FAD6 /* ListGamesViewController.swift */,
 			);
 			path = SuperNintendoDB;
 			sourceTree = "<group>";
@@ -122,6 +147,9 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				KnownAssetTags = (
+					enviar,
+				);
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
@@ -175,6 +203,9 @@
 				0EDD1FD52AB50F2A00609A3F /* SceneDelegate.swift in Sources */,
 				0E9BB3072AB7763500A5FAD6 /* ListGamesViewController.swift in Sources */,
 				0E9BB3112AB7888500A5FAD6 /* GameDetailTableViewCell.swift in Sources */,
+				0EBA3C2A2ABC372E00AB7B07 /* ListGamesViewModel.swift in Sources */,
+				0EBA3C2E2ABC3AA200AB7B07 /* GameDetailViewController.swift in Sources */,
+				0EBA3C282ABC334200AB7B07 /* Observable.swift in Sources */,
 				0E9BB3052AB774A200A5FAD6 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
