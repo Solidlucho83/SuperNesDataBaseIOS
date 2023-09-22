@@ -10,13 +10,13 @@ import Firebase
 import FirebaseFirestore
 
 class ListGamesViewModel {
-    // Propiedad observable para mantener los datos actualizados en la vista
+    
     var games: Observable<[(title: String, cover: String)]> = Observable([])
     
-    // Referencia a Firestore
+    
     private let db = Firestore.firestore()
     
-    // Función para cargar los datos desde Firestore
+   
     func fetchGames() {
         db.collection("snesgames").getDocuments { [weak self] (querySnapshot, error) in
             guard let self = self else { return }
@@ -35,7 +35,7 @@ class ListGamesViewModel {
                         }
                     }
                 }
-                // Actualizar los datos en la propiedad observable
+             
                 self.games.value = gameData
             }
         }

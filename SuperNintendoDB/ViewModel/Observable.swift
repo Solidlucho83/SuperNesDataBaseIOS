@@ -7,7 +7,6 @@
 
 import Foundation
 
-// Clase Observable genérica que puede contener cualquier tipo de valor
 class Observable<T> {
 
     var value: T? {
