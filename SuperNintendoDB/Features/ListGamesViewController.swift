@@ -23,10 +23,10 @@ class ListGamesViewController: UIViewController {
         listGameTableView.register(UINib(nibName: "GameDetailTableViewCell", bundle: nil), forCellReuseIdentifier: "GameDetailTableViewCell")
         listGameTableView.delegate = self
 
-        // Cargar los datos
+        
         viewModel.fetchGames()
 
-        // Observar la propiedad games del ViewModel para update
+        
         viewModel.games.bind { [weak self] _ in
             self?.listGameTableView.reloadData()
         }
@@ -43,9 +43,8 @@ extension ListGamesViewController: UITableViewDelegate {
               if let indexPath = listGameTableView.indexPathForSelectedRow {
                   let selectedGame = viewModel.games.value?[indexPath.row]
                   
-                  // Accede al controlador de destino (GameDetailViewController)
+                
                   if let objDestiny = segue.destination as? GameDetailViewController {
-                      // Pasa los datos del juego al controlador de detalles
                       objDestiny.gameTitle = selectedGame?.title
                       objDestiny.gameCoverURL = selectedGame?.cover
                   }
