@@ -17,8 +17,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WpE-jH-rYb">
-                                <rect key="frame" x="16" y="750" width="361" height="36"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Snes" translatesAutoresizingMaskIntoConstraints="NO" id="vF5-IM-ciA">
+                                <rect key="frame" x="16" y="225.66666666666669" width="361" height="220.66666666666669"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoSnes" translatesAutoresizingMaskIntoConstraints="NO" id="s9a-ho-aVG">
+                                <rect key="frame" x="16" y="100" width="361" height="77.666666666666686"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vq3-JG-C2C">
+                                <rect key="frame" x="16" y="751" width="361" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="About"/>
+                                <connections>
+                                    <action selector="AboutAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RxB-bv-cXh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WpE-jH-rYb">
+                                <rect key="frame" x="16" y="685" width="361" height="34.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="gamecontroller" catalog="system" title="To List Games" imagePadding="1">
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="default"/>
@@ -27,29 +41,27 @@
                                     <segue destination="NVC-Mg-5kw" kind="show" id="JeH-hu-LoW"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Snes" translatesAutoresizingMaskIntoConstraints="NO" id="vF5-IM-ciA">
-                                <rect key="frame" x="16" y="225.66666666666669" width="361" height="220.66666666666669"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoSnes" translatesAutoresizingMaskIntoConstraints="NO" id="s9a-ho-aVG">
-                                <rect key="frame" x="16" y="100" width="361" height="77.666666666666686"/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="s9a-ho-aVG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="45x-ex-KpR"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WpE-jH-rYb" secondAttribute="bottom" constant="32" id="58K-eZ-3nU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="s9a-ho-aVG" secondAttribute="trailing" constant="16" id="6rm-r2-26t"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vq3-JG-C2C" secondAttribute="trailing" constant="16" id="8o2-gc-Hfy"/>
+                            <constraint firstItem="Vq3-JG-C2C" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="HUd-jb-sfW"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WpE-jH-rYb" secondAttribute="trailing" constant="16" id="HZx-0j-AIO"/>
                             <constraint firstItem="vF5-IM-ciA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Wg6-bd-1sf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Vq3-JG-C2C" secondAttribute="bottom" constant="32" id="d71-nl-ULd"/>
                             <constraint firstItem="vF5-IM-ciA" firstAttribute="top" secondItem="s9a-ho-aVG" secondAttribute="bottom" constant="48" id="kAh-9J-bny"/>
                             <constraint firstItem="s9a-ho-aVG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="100" id="lCY-yc-Suz"/>
                             <constraint firstItem="WpE-jH-rYb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ndc-Ut-k5g"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WpE-jH-rYb" secondAttribute="bottom" constant="98.670000000000002" id="vB9-nb-BIv"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vF5-IM-ciA" secondAttribute="trailing" constant="16" id="xr6-rJ-thm"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="yTk-4X-X4h"/>
                     <connections>
+                        <outlet property="aboutBtn" destination="Vq3-JG-C2C" id="VCB-mE-zlO"/>
                         <outlet property="toGameListButton" destination="WpE-jH-rYb" id="SB8-14-84N"/>
                     </connections>
                 </viewController>
