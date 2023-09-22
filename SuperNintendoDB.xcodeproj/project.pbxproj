@@ -73,14 +73,34 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		0EC6D7642ABE1C4F004D1F0A /* Features */ = {
+		0EC6D7642ABE1C4F004D1F0A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				0E9BB3042AB774A200A5FAD6 /* HomeViewController.swift */,
 				0E9BB3062AB7763500A5FAD6 /* ListGamesViewController.swift */,
 				0EBA3C2D2ABC3AA200AB7B07 /* GameDetailViewController.swift */,
 			);
-			path = Features;
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0EDA63D22ABE42AC007A7084 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0EDD1FDB2AB50F2B00609A3F /* Assets.xcassets */,
+				0EDD1FD22AB50F2A00609A3F /* AppDelegate.swift */,
+				0EDD1FD42AB50F2A00609A3F /* SceneDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0EDA63D32ABE4318007A7084 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0E9BB3082AB77E1700A5FAD6 /* Cells */,
+				0EDD1FD82AB50F2A00609A3F /* Main.storyboard */,
+				0EDD1FDD2AB50F2B00609A3F /* LaunchScreen.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		0EDD1FC62AB50F2A00609A3F = {
@@ -103,14 +123,10 @@
 		0EDD1FD12AB50F2A00609A3F /* SuperNintendoDB */ = {
 			isa = PBXGroup;
 			children = (
-				0EC6D7642ABE1C4F004D1F0A /* Features */,
+				0EDA63D32ABE4318007A7084 /* Views */,
+				0EDA63D22ABE42AC007A7084 /* Resources */,
+				0EC6D7642ABE1C4F004D1F0A /* Controller */,
 				0EC6D7632ABE1C34004D1F0A /* ViewModel */,
-				0E9BB3082AB77E1700A5FAD6 /* Cells */,
-				0EDD1FD22AB50F2A00609A3F /* AppDelegate.swift */,
-				0EDD1FD42AB50F2A00609A3F /* SceneDelegate.swift */,
-				0EDD1FD82AB50F2A00609A3F /* Main.storyboard */,
-				0EDD1FDB2AB50F2B00609A3F /* Assets.xcassets */,
-				0EDD1FDD2AB50F2B00609A3F /* LaunchScreen.storyboard */,
 				0EDD1FE02AB50F2B00609A3F /* Info.plist */,
 			);
 			path = SuperNintendoDB;
